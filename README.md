@@ -1,198 +1,118 @@
-# RankMelbourne - The Growth Platform for Melbourne Creators & Businesses
+# RankMelbourne - The Growth Platform That Happens to Solve Links
 
-🚀 **Beyond Linktree: The Only Platform That Makes You Discoverable**
+> **"Linktree gives you links. We give you growth."**
 
-## 🎯 Vision
+## 🚀 Current Status
 
-RankMelbourne is not just another link-in-bio tool. It's a comprehensive growth platform designed specifically for Melbourne's influencers, content creators, and small businesses. While Linktree gives you a simple link page, RankMelbourne makes you **discoverable in Google**, connects you with **local businesses**, and helps you **monetize your audience**.
+- ✅ **Stripe Subscriptions**: Complete with 3-day trials, automated product creation
+- ✅ **Three-tier Pricing**: Free, Growth ($19/mo), Pro ($49/mo)
+- ✅ **Next.js + TypeScript**: Fast, SEO-optimized, production-ready
+- 🔄 **In Development**: Link-in-bio builder, booking system, AI tools
 
-## 💡 Unique Value Proposition
+## 💡 Why We're Different (The Real Value)
 
-### **"Don't Just Share Links. Dominate Melbourne Search."**
+### 1. **SEO That Actually Works**
+- Every profile ranks for "[Name] Melbourne" searches
+- Rich schema markup for Google
+- Unlike Linktree's zero SEO value pages
 
-## 🏆 Key Differentiators from Linktree
+### 2. **Built-in Business Tools**
+- Smart booking system with payments
+- Automated review collection
+- Customer CRM and SMS campaigns
+- Not just links - actual business growth
 
-### 1. **SEO-Powered Link Pages**
-- Each profile optimized to rank for "[name] Melbourne" searches
-- Local schema markup for "near me" searches
-- Google My Business integration
-- Custom Melbourne-focused keywords
+### 3. **Melbourne's Digital Network**
+- Local discovery platform
+- Weather-based promotions
+- AFL game day features
+- Festival integrations
 
-### 2. **Local Discovery Network**
-- **Melbourne Business Directory** - Discover local creators/businesses
-- **Collab Finder** - AI matches influencers with businesses
-- **Melbourne Trending** - See what's hot in Melbourne right now
-- **Location-based discovery** - "Creators near Federation Square"
+### 4. **AI That's Actually Useful**
+- Melbourne-specific content suggestions
+- Local hashtag research
+- Best posting times for YOUR audience
+- Caption generator with Aussie slang
 
-### 3. **Built-in Booking & Commerce**
-- Direct booking integration (restaurants, physios, photographers)
-- Payment processing via Stripe
-- Automated SMS reminders
-- Google Calendar sync
-- Availability management
-
-### 4. **AI-Powered Growth Tools**
-- Auto-generate SEO meta descriptions
-- Content suggestions based on Melbourne trends
-- Optimal posting times for Melbourne audience
-- Competitor analysis
-
-### 5. **Melbourne-Specific Features**
-- Weather-based content suggestions
-- AFL game day traffic boosts
-- Melbourne event calendar integration
-- Public transport accessibility info
-
-## 📊 Target Audiences
-
-### **For Influencers/Content Creators**
-- Fashion bloggers
-- Food reviewers
-- Fitness influencers
-- Travel vloggers
-- Lifestyle creators
-
-### **For Local Businesses**
-- Restaurants & cafes
-- Physiotherapists & wellness
-- Photographers
-- Personal trainers
-- Beauty salons
-- Real estate agents
-
-## 🛠️ Tech Stack
+## 🛠 Tech Stack
 
 - **Frontend**: Next.js 14, TypeScript, Tailwind CSS
-- **Backend**: Node.js (planned)
-- **Database**: PostgreSQL/Supabase (planned)
-- **Authentication**: NextAuth.js (planned)
-- **Payments**: Stripe (planned)
-- **SMS**: Twilio (planned)
-- **Analytics**: Custom + Google Analytics
+- **Payments**: Stripe Subscriptions
+- **Database**: PostgreSQL (coming soon)
+- **Auth**: NextAuth.js (coming soon)
+- **Hosting**: Vercel
+- **Analytics**: Mixpanel + Custom
 
-## 🚀 Development Roadmap
-
-### ✅ Phase 0: MVP (Completed)
-- [x] Landing page with value proposition
-- [x] Link-in-Bio builder interface
-- [x] Public link pages
-- [x] Basic analytics dashboard mockup
-- [x] Responsive design
-- [x] Comparison with Linktree
-
-### 📍 Phase 1: SEO Foundation (Week 1-2)
-- [ ] Meta tags for each link page
-- [ ] Structured data for local businesses
-- [ ] XML sitemap generation
-- [ ] robots.txt optimization
-- [ ] Page speed optimization
-- [ ] Melbourne-specific keyword integration
-
-### 📅 Phase 2: Booking System (Week 3-4)
-- [ ] Calendar component
-- [ ] Availability management
-- [ ] Booking form
-- [ ] SMS notifications via Twilio
-- [ ] Email confirmations
-- [ ] Google Calendar integration
-- [ ] Payment processing with Stripe
-
-### 🌐 Phase 3: Discovery Network (Week 5-6)
-- [ ] Creator directory
-- [ ] Category filters (Fashion, Food, Fitness, etc.)
-- [ ] Location-based search
-- [ ] Collaboration request system
-- [ ] Success story showcase
-- [ ] Verified badge system
-
-### 📊 Phase 4: Advanced Analytics (Week 7-8)
-- [ ] Click heatmaps
-- [ ] Audience demographics
-- [ ] Peak traffic times
-- [ ] Revenue attribution
-- [ ] Competitor comparison
-- [ ] Custom reports
-
-### 🤖 Phase 5: AI Features (Week 9-10)
-- [ ] Auto-generated descriptions
-- [ ] Content suggestions
-- [ ] Trend predictions
-- [ ] Optimal posting times
-- [ ] Hashtag recommendations
-
-### 🏙️ Phase 6: Melbourne Integration (Week 11-12)
-- [ ] Weather API integration
-- [ ] Event calendar sync
-- [ ] Public transport info
-- [ ] Local news feed
-- [ ] AFL game day features
-
-## 💰 Monetization Strategy
-
-### **Pricing Tiers**
-1. **Starter** (Free)
-   - Basic link page
-   - 5 links max
-   - Basic analytics
-
-2. **Growth** ($19/month)
-   - Unlimited links
-   - SEO optimization
-   - Booking system
-   - Advanced analytics
-
-3. **Pro** ($49/month)
-   - Everything in Growth
-   - AI features
-   - Priority support
-   - Custom domain
-   - Remove branding
-
-4. **Business** ($99/month)
-   - Everything in Pro
-   - Multiple team members
-   - API access
-   - White label options
-
-## 🎯 Success Metrics
-
-- **User Acquisition**: 1,000 Melbourne creators in 3 months
-- **Engagement**: 50% monthly active users
-- **Revenue**: $10K MRR within 6 months
-- **SEO Performance**: Rank #1 for "Melbourne link in bio"
-- **Local Impact**: 100+ successful collaborations facilitated
-
-## 🚦 Getting Started
+## 🏃‍♂️ Quick Start
 
 ```bash
-# Clone the repository
-git clone https://github.com/handyman30/melbourne-agency.git
+# Clone the repo
+git clone https://github.com/yourusername/melbourne-seo-nextjs.git
+cd melbourne-seo-nextjs
 
 # Install dependencies
-cd melbourne-agency
 npm install
+
+# Set up environment variables
+cp env.example .env.local
+# Edit .env.local with your Stripe keys
+
+# Create Stripe products
+node scripts/setup-stripe-products.js
 
 # Run development server
 npm run dev
-
-# Build for production
-npm run build
 ```
+
+Visit http://localhost:3003 to see the app.
+
+## 📊 Plans & Features
+
+| Feature | Free | Growth ($19/mo) | Pro ($49/mo) |
+|---------|------|-----------------|--------------|
+| Link-in-bio page | ✅ (1 page) | ✅ Unlimited | ✅ Unlimited |
+| Links per page | 5 | Unlimited | Unlimited |
+| SEO optimization | Basic | ✅ Full | ✅ Full |
+| Booking system | ❌ | ✅ | ✅ |
+| Review collection | ❌ | ✅ | ✅ |
+| Custom domain | ❌ | ❌ | ✅ |
+| AI tools | ❌ | 5/month | Unlimited |
+| Remove branding | ❌ | ✅ | ✅ |
+| Analytics | Basic | Advanced | Full + API |
+
+## 🎯 The Vision
+
+**Phase 1** (Now - 3 months): Core link-in-bio with booking system
+**Phase 2** (3-6 months): Full CRM, AI tools, local discovery
+**Phase 3** (6-12 months): Marketplace, white-label, expansion to Sydney
+
+## 📈 Revenue Projections
+
+- Month 6: 500 users = $12K MRR
+- Year 1: 2,000 users = $50K MRR  
+- Year 2: 10,000 users = $250K MRR
+
+Plus transaction fees, premium placements, and API access.
 
 ## 🤝 Contributing
 
-We welcome contributions! Please see our contributing guidelines (coming soon).
+We're looking for:
+- React/Next.js developers
+- Melbourne locals who get the culture
+- Marketers who understand creators
+- Anyone passionate about helping local businesses
+
+## 📄 Documentation
+
+- [Stripe Setup Guide](./STRIPE_SETUP.md)
+- [Differentiation Strategy](./STRATEGY_DIFFERENTIATION.md)
+- [API Documentation](./docs/api.md) (coming soon)
 
 ## 📞 Contact
 
-- **Email**: hello@rankmelbourne.com.au
-- **Website**: https://rankmelbourne.com.au (coming soon)
-- **Instagram**: @rankmelbourne
-
-## 📄 License
-
-Copyright © 2024 RankMelbourne. All rights reserved.
+Questions? Ideas? Want to invest? 
+Reach out: [your-email@example.com]
 
 ---
 
-**Built with ❤️ for Melbourne's creators and businesses** 
+**Built with ❤️ in Melbourne, for Melbourne (and then the world)** 
