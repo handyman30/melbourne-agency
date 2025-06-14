@@ -1,11 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import Stripe from 'stripe'
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-  apiVersion: '2025-05-28.basil',
-})
-
-// Price IDs for different plans - these need to be created in your Stripe dashboard
+// Price IDs for different plans
 const PRICE_IDS = {
   growth_monthly: 'price_1RZqvGCcsYqHROqxX3GXSMiz',
   growth_annual: 'price_1RZqvGCcsYqHROqxsV87lCsA',
@@ -15,6 +11,19 @@ const PRICE_IDS = {
 
 export async function POST(req: NextRequest) {
   try {
+    // Initialize Stripe inside the function to avoid build-time errors
+    if (!process.env.STRIPE_SECRET_KEY) {
+      console.error('STRIPE_SECRET_KEY is not set')
+      return NextResponse.json(
+        { error: 'Payment system not configured' },
+        { status: 500 }
+      )
+    }
+
+    const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
+      apiVersion: '2025-05-28.basil',
+    })
+
     const { paymentMethodId, priceId, email, name } = await req.json()
 
     // Validate price ID
